@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500;600&display=swap');
+
+/* remove all pading and margin for entire page */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+   font-family: 'Cairo', sans-serif;
+}
+header {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+ header .brand {
+    margin: 100px auto 60px; 
+    display: inline-block;
+    padding-bottom: 35px;
+    border-bottom: 5px solid #484d55;
+    
+ }
+
+ header .heading-page h1 {
+    color: #fff;
+    
+ }
+
+ header .heading-page p {
+    color: #c5c5c5;
+    
+    
+ }
+
+ header .count-amount {
+    width: 60%;
+    margin: 50px auto 0px;
+
+
+ }
+
+ header .counter {
+    display: inline-block;
+    margin: 0 15px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+ }
+
+ header .count-amount {
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffce00;
+    text-align: center;
+    
+ }
+
+ header .count-period {
+    font-size: 15px;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+ }
+
+ header .send-notification {
+    color: #fff;
+}
+    header .send-notification p {
+        margin-bottom: 0px !important;
+
+ 
+ }
+ header .input-group {
+    width: 30%;
+    margin: auto;
+    transform: translateY(50%);
+ }
+
+ header .send-notification .input-group button {
+
+    background-color: #ffce00;
+    padding: 13px 20px;
+    border-radius: 0;
+    color: #000;
+ }
+
+ header .send-notification .input-group button:active {
+
+   background-color: #ffce00;
+   color: #000;
+
+}
+
+
+ header .send-notification .input-group input {
+    border-radius: 0;
+    color: #000;
+    text-align: right;
+ }
+
+ /* عشان الرسالة الخطا الاحمر للايميل ما يدفع صندوق الايميل */
+.invalid-feedback {
+    margin-bottom: -30px;
+}
+
+.features {
+   padding: 70px 0px;
+}
+
+.features .container .row {
+   padding-top: 40px;
+}
+
+.features .container .row .d-flex {
+   border: #e0e0e0 1px solid;
+   padding: 30px 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.features .container .row .d-flex h5{
+font-weight: bold
+}
+
+.features .container .row .d-flex p{
+   color: #8d8d8d
+   }
+
+   /* الحاويات الزوجية فقط اللي ع اليمين */
+.features .container .row .col-md-6:nth-child(even) {
+   direction: ltr;
+
+}
+
+footer{
+   background-image: url(../images/footer-bg.jpg);
+   background-size: cover;
+   background-position: center center;
+   text-align: center;
+}
+
+footer .send-notification {
+   background-color: rgba(255, 206, 0, 0.7);
+   padding-top: 40px;
+   padding-bottom: 40px;
+}
+
+footer .send-notification form {
+   padding-top: 20px;
+}
+
+footer .input-group {
+   width: 30%;
+   margin: auto;
+}
+
+footer .input-group input {
+   border-radius: 0px;
+   border-color: #8d8d8d;
+   text-align: right;
+}
+
+footer .input-group button {
+background-color: #2e2e2d;
+padding: 13px 20px;
+border-radius: 0;
+color: #ffce00;
+
+}
+
+footer .input-group button:hover {
+
+   background-color: #2e2e2d;
+   color: #ffce00;
+}
+
+footer .input-group button:active {
+   background-color: #2e2e2d;
+   color: #ffce00;
+}
+
+footer .footer-socialMedia {
+   background-color: rgba(57, 57, 57, 0.9);
+   padding: 50px 0 30px;
+}
+
+footer .footer-socialMedia h4{
+   color: #fff;
+   padding-bottom: 10px;
+}
+
+footer .footer-socialMedia .list-inline a{
+   color: #fff;
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   background-color: rgba(255, 255, 255, 0.14);
+   display: block;
+   transition: .5s;
+}
+
+footer .footer-socialMedia .list-inline a:hover {
+   background-color:  #ffce00;
+   color: #2e2e2d;
+   
+}
+
+footer .footer-socialMedia a {
+   color: #fff;
+   font-size: 0.9rem;
+   text-decoration: none;
+   
+}
+
+footer .footer-socialMedia i {
+   color: #fff;
+   font-size: 0.9rem;
+   text-decoration: none;
+   padding-right: 4px;
+   
+}
+
+@media (max-width: 992px)  {
+.input-group {
+   width: 50% !important;
+}
+
+.features .container .row .d-flex {
+   
+   height: 90%;
+   padding-top: 25px;
+   padding-left: 10px;
+   padding-right: 20px;
+
+}
+
+
+
+
+}
+
+@media (max-width: 650px) {
+header p {
+   padding-left: 30px;
+   padding-right: 30px;
+
+}
+   }

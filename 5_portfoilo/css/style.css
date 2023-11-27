@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+header.header {
+    background-image: url(../images/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+
+}
+
+nav.navbar .navbar-nav li a.nav-link {
+    color: #fff;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    transition: all 0.5s;
+}
+
+nav.navbar .navbar-nav li a.nav-link:hover,
+nav.navbar .navbar-nav li a.nav-link.active {
+    color: #0575e6;
+    background-color: #fff;
+}
+
+/* This targets elements that have both the .navbar class and the .noTransparent class. 
+The lack of space between .navbar and .noTransparent means the element must have both classes simultaneously. */
+
+nav.noTransparent {
+    background-color: #fff;
+    box-shadow: #535353 0px 0px 12px;
+}
+
+.navbar.noTransparent .navbar-nav li a.nav-link {
+    color: #494949;
+}
+
+.navbar.noTransparent .navbar-nav li a.nav-link:hover {
+    border: #0575e6 1px solid;
+}
+
+.navbar.noTransparent .navbar-nav li a.nav-link.active {
+    color: #0575e6;
+}
+
+.header .overlay {
+    background-color: rgba(5, 117, 230, 0.9);
+    color: #fff;
+    padding: 50px 60px;
+    transform: translateY(25%);
+    transition: all 0.5s;
+
+}
+
+.header .personal img {
+    border-radius: 50%;
+    border: #68a2dd 5px solid;
+    margin-bottom: 30px;
+}
+
+.header .overlay h1 {
+    font-size: 22px;
+    padding-bottom: 25px;
+}
+
+.header .overlay h1 span {
+    color: #68a2dd;
+}
+
+.header .overlay p {
+    padding-bottom: 30px;
+}
+
+.header .overlay ul li a {
+    color: #04396e;
+    font-size: 25px;
+
+}
+
+.header .overlay ul li a:hover {
+    color: #fff;
+}
+
+.header .overlay .cv {
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+    padding: 10px 20px;
+    border: #fff 1px solid;
+    transition: ease all 0.3s;
+}
+
+.header .overlay .cv:hover {
+    background-color: #04396e;
+    color: #fff;
+    border: 0;
+}
+
+.license {
+    background-color: #d6edff;
+
+    padding: 200px 0px 80px;
+}
+
+.license .license-title {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #0575e6;
+    position: relative;
+
+}
+
+.license .license-title h2 i {
+    display: block;
+
+}
+
+.license .license-title::after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #0575e6;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.license .timeline {
+    padding-top: 45px;
+    list-style: none;
+    padding-right: 0px;
+    position: relative;
+
+}
+
+.license .timeline::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: #0575e6;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.license ul.timeline li .timebox {
+    background-color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    border: #dfdfdf 2px solid;
+    width: 48%;
+    position: relative;
+}
+
+.license ul.timeline li .timebox h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.license ul.timeline li .timebox p {
+    color: #686767;
+    font-size: small;
+}
+
+.license ul.timeline li .timebox h4 span {
+    color: #fff;
+    background-color: #0575e6;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 25px;
+    font-size: 13px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}
+
+.license ul.timeline li .timebox::after {
+    width: 20px;
+    height: 20px;
+    border-left: #dfdfdf 2px solid;
+    border-bottom: #dfdfdf 2px solid;
+    ;
+    position: absolute;
+    top: 40%;
+    left: -10px;
+    transform: rotate(45deg);
+    background-color: #fff;
+    content: "";
+}
+
+.license ul.timeline li {
+    position: relative;
+    margin-bottom: -30px;
+}
+
+.license ul.timeline li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 45%;
+    right: 50%;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #0575e6;
+    transform: translateX(50%);
+}
+
+.license ul.timeline li:nth-child(even) {
+    direction: ltr;
+    text-align: left;
+
+}
+
+.license ul.timeline li:nth-child(even) .timebox h4 span {
+    float: left;
+    margin-left: 0px;
+    margin-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.license ul.timeline li:nth-child(even) .timebox::after {
+    border: 0;
+    left: auto;
+    right: -10px;
+    transform: rotate(-45deg);
+    border-bottom: #dfdfdf 2px solid;
+    border-right: #dfdfdf 2px solid;
+}
+
+.stats {
+    background-image: url(../images/bg-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.stats .overlay {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    color: #fff;
+    background-color: rgba(5, 117, 230, 0.5);
+    font-weight: 700;
+
+}
+
+.stats .overlay p {
+    margin-top: 30px;
+}
+
+/* Circle progress */
+section.stats .overlay .stat .circle canvas {
+    background-color: #dfdfdf !important;
+    padding: 10px;
+    border-radius: 50%;
+
+
+}
+
+section.stats .overlay .stat .circle {
+    position: relative;
+}
+
+section.stats .overlay .stat .circle span {
+    position: absolute;
+    color: #0575e6;
+    font-size: 22px;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Circle progress */
+
+/* gallery section */
+.gallery {
+    padding: 60px 0px 60px;
+}
+
+.gallery .gallery-title {
+    color: #0575e6;
+    margin-bottom: 30px;
+}
+
+.gallery .gallery-title i {
+
+    padding-bottom: 20px;
+}
+
+.portfolio-nav button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.portfolio-nav .active {
+    background-color: #2b2e30;
+    color: white;
+
+}
+
+.portfolio-item {
+    width: 100%;
+    /* adjust as needed */
+    height: 100%;
+    /* adjust as needed */
+    margin: 15px 0px;
+    display: inline-block;
+    /* show by default */
+    opacity: 0;
+    /* hidden */
+    transform: translateY(20px);
+    /* slightly moved down */
+    transition: opacity 0.5s, transform 0.5s;
+    /* transition effects for opacity and transform */
+
+}
+
+/* Visible state of the portfolio item */
+.portfolio-item.visible {
+    opacity: 1;
+    /* fully visible */
+    transform: translateY(0);
+    /* normal position */
+}
+
+/* gallery section */
+
+.contacts {
+    background-image: url(../images/bg-3.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contacts .overlay {
+    padding: 60px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contacts .overlay .testimonials .testimonials-title h3 {
+    color: #fff; 
+}
+
+
+
+.slider .carousel {
+    width: 70%;
+    margin: auto;
+
+}
+.slider .carousel .carousel-item img {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 50%;
+    border: #fff 3px solid;
+    margin-bottom: 25px;
+    
+}
+
+.slider .carousel .carousel-item p {
+    font-size: 18px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 40px;
+    text-align: center;
+}
+.slider .carousel .carousel-inner{
+    padding: 25px;
+    color: #fff;
+}
+
+.slider .carousel .carousel-item h3 span {
+    font-weight: 200 !important;
+}
+
+.contacts .contact-info  {
+    background-color: #fff;
+    padding: 50px;
+    margin-top: 30px;
+
+}
+
+.contacts .contact-info h3 {
+    color: #0575e6;
+    margin-bottom: 35px;
+}
+
+.contacts .contact-info .contact-form input, .contact-form textarea {
+    border-radius: 0;
+    margin-bottom: 15px;
+    text-align: right;
+    border: #0575e6 1px solid;
+}
+
+.contacts .contact-info .contact-form .input-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.input-icon {
+    position: absolute;
+    right: 20px; /* move the icon to the right side */
+    top: 35%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #0575e6;
+}
+
+input[type="text"], input[type="email"] {
+    padding-right: 35px; /* add padding to the right side of the input */
+    height: 40px;
+}
+
+
+
+.contacts .contact-info .contact-us i {
+    margin-left: 10px;
+}
+
+.contacts .contact-info .social {
+
+    font-size: 1.5em;
+    color: #0575e6;
+    list-style: none;
+    padding: 0;
+    
+}
+
+.contacts .contact-info hr {
+    color: #0575e6;
+    opacity: 1;
+    width: 55%;
+    margin-top: -9px;
+}
+
+.contacts .contact-info .contact-form button {
+
+    width: auto;
+    border:#0575e6 1px solid;
+    border-radius: 0%;
+    margin-right: 12px;
+    transition: all 0.5s;
+
+}
+
+.contacts .contact-info .contact-form button:hover {
+    background-color: #0575e6;
+    color: #fff;
+}
+
+.contacts  .copyright {
+    color: #fff;
+    font-size: 0.7em;
+    padding-top: 20px;
+}
+
+.contacts .contact-info .contact-form .invalid-feedback {
+    margin-bottom: 5px;
+    
+}
+
+@media (max-width: 768px) {
+
+    .contacts .contact-info .contact-form button {
+        margin-bottom: 20px;
+    }
+    .slider .carousel {
+        width: 100%;
+    
+    }
+}
+
+
+@media (max-width: 992px) and (min-width: 400px) {
+    .slider .carousel {
+        width: 100%;
+    
+    }
+
+    .license .timeline .timebox h4 span {
+        margin-right: 5px;
+    }
+
+    .license ul.timeline li .timebox h4  {
+        font-size: 0.7em;
+    }
+
+    .license ul.timeline li .timebox h4 span {
+        font-size: 0.7em;
+    }
+
+    .license ul.timeline li .timebox p {
+        font-size: 0.7em;
+    }
+
+}
+
+.header .navbar .navbar-toggler .fa-solid, .fas
+ {
+    color: #fff;
+}
+
+
+/* This targets elements that have both the .navbar class and the .noTransparent class. 
+The lack of space between .navbar and .noTransparent means the element must have both classes simultaneously. */
+
+.navbar.noTransparent .navbar-toggler .fa-solid,
+.navbar.noTransparent .navbar-toggler .fas {
+    color: #0575e6 !important;
+}
